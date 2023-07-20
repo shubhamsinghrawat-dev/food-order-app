@@ -105,4 +105,4 @@ const Cart = (props) => {
   );
 };
 
-export def
+export default Cart;
