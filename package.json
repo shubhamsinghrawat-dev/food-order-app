@@ -6,7 +6,9 @@
     "start": "parcel index.html",
     "build": "parcel build index.html",
     "test": "jest",
-    "watch-test": "jest --watch"
+    "watch-test": "jest --watch",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "repository": {
     "type": "git",
@@ -27,6 +29,7 @@
     "@testing-library/jest-dom": "^6.4.8",
     "@testing-library/react": "^16.0.0",
     "babel-jest": "^29.7.0",
+    "gh-pages": "^6.1.1",
     "http-proxy-middleware": "^3.0.0",
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0",
